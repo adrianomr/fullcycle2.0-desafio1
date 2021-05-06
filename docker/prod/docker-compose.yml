@@ -1,0 +1,12 @@
+
+version: "3"
+
+services:
+  app:
+    image: adrianomr/codeeducation:latest
+    build: 
+      context: ./../..
+      dockerfile: ./docker/prod/Dockerfile
+    container_name: codeeducation
+    ports:
+      - 8000:8000
